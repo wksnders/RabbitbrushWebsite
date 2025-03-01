@@ -34,4 +34,14 @@
 </template>
 
 <style scoped>
+a {
+	color: var(--color-text);
+}
+
+h1 {
+	color: var(--color-heading);
+}
+h2 {
+	color: var(--color-heading);
+}
 </style>

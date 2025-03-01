@@ -12,14 +12,17 @@
 
 h1{
   font-size:72px;
+	color: var(--color-heading);
 
 }
 
 h2{
   font-size:64px;
+	color: var(--color-heading);
 }
 
 .small{
   font-size:36px;
+	color: var(--color-heading);
 }
 </style>
