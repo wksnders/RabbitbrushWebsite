@@ -24,6 +24,8 @@
       <p>You do not need to take the Open Studio night on the third Wednesday if you just want to take the first Wednesday class.</p>
     </section>
 
+    <section class="images"></section>
+
 		<!--<img src="https://i.imgur.com/FwnVqcr.jpeg" />-->
 	</article>
 </template>

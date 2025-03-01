@@ -12,6 +12,7 @@
       <p>"Annette knows what she's doing, taking this art class was one of the best decisions I’ve made. I learned so many different techniques and styles of art. It really gave me a head start for future classes." -- Former Child Student</p>
       <p>"I am so impressed by her classes, there's a wide range of work that we do, and Annette always helps you out so you're not left there not knowing what to do. Best class ever!"-- Former Child Student</p>
     </section>
+    <section class="images"></section>
   </article>
 </template>
 
