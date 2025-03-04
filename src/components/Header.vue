@@ -13,12 +13,13 @@
 h1{
   font-size:72px;
 	color: var(--color-heading);
-
+  font-family: 'Sacramento';
 }
 
 h2{
   font-size:64px;
 	color: var(--color-heading);
+  font-family: 'sanchez';
 }
 
 .small{
