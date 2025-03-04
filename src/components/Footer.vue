@@ -4,44 +4,81 @@
 <template>
   <footer>
     <div class="footer-container">
+      <div class="row">
+        <h1><span class="editor_footer_script">Rabbitbrush Studio</span></h1>
+			  <nav>
+			  	<RouterLink to="/">Home</RouterLink>
+			  	<RouterLink to="/about-me">About</RouterLink>
+			  	<RouterLink to="/class-descriptions">Class Descriptions</RouterLink>
+			  	<RouterLink to="/testimonials">Testimonials</RouterLink>
+			  </nav>
+      </div>
+      <div div class="row">
+        <h2><span style="font-size:22px;">1619 W. Allegheny Drive, Taylorsville, Utah &nbsp; 801.694.1891</span></h2>
+      </div>
       <div>
-        <div>
+        <div class="row">
           <span style="color:#808080;">© All rights reserved</span>
         </div>
       </div>
-      <div>
-        <ul class="wsb-navigation-rendered-top-level-menu ">
-          <li style="width: auto">
-            <a href="home.html" target="" data-title="Home" data-pageid="00000000-0000-0000-0000-000000210703" data-url="home.html">Home</a>
-          </li>
-          <li style="width: auto">
-            <a href="about-me.html" target="" data-title="About Me" data-pageid="00000000-0000-0000-0000-000000392558" data-url="about-me.html">About Me</a>
-          </li>
-          <li style="width: auto" class="active">
-            <a href="testimonials.html" target="" data-title="Testimonials" data-pageid="00000000-0000-0000-0000-000000392559" data-url="testimonials.html">Testimonials</a>
-          </li>
-          <li style="width: auto">
-            <a href="class-descriptions.html" target="" data-title="Class Descriptions" data-pageid="00000000-0000-0000-0000-000011689168" data-url="class-descriptions.html">Class Descriptions</a>
-          </li>
-        </ul>
-      </div>
-      <div>
-        <h1><span class="editor_footer_script">Rabbitbrush Studio</span></h1>
-        <h2><span style="font-size:22px;">1619 W. Allegheny Drive, Taylorsville, Utah &nbsp; 801.694.1891</span></h2>
-      </div>
     </div>
+
   </footer>
 </template>
 
 <style scoped>
-a {
-	color: var(--color-text);
-}
-
 h1 {
-	color: var(--color-heading);
+  padding-top:1rem;
+  display: inline-block;
+	color: white;
 }
 h2 {
-	color: var(--color-heading);
+	color: white;
+}
+
+footer{
+  position:static;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-container{
+  position: relative;
+  margin: 0 10%;
+  width: 80%;
+  background: black;
+}
+
+.row{
+  padding: 0 1rem;
+  width: 100%;
+}
+
+nav {
+  width: 60%;
+  vertical-align:middle;
+	font-size: 12px;
+	text-align: center;
+	margin-top: 2rem;
+  color: white;
+  display: inline-block;
+}
+
+nav a.router-link-exact-active {
+	color: lightskyblue;
+}
+
+nav a.router-link-exact-active:hover {
+	background-color: transparent;
+}
+
+nav a {
+	display: inline-block;
+	padding: 0 1rem;
+	border-left: 1px solid var(--color-border);
+}
+
+nav a:first-of-type {
+	border: 0;
 }
 </style>
