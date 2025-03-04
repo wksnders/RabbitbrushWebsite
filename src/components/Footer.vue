@@ -37,7 +37,8 @@ h2 {
 }
 
 footer{
-  position:static;
+  margin-top: 3rem;
+  position:relative;
   bottom: 0;
   width: 100%;
 }

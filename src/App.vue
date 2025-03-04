@@ -38,8 +38,10 @@ header {
   background-position: center top;
   background-repeat: repeat;
   position: fixed; top: 0; bottom: 0; left: 0; right: 0;
-  width: 100dvw;
-  height: 100dvh;
+  width: 100%;
+  height: 100%;
+  min-height: 100dvh;
+  min-width:  100dvw;
   overflow: hidden;
   z-index: -1;
 }
