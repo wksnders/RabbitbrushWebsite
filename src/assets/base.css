@@ -36,6 +36,15 @@
 	--section-gap: 160px;
 }
 
+@font-face {
+  font-family: 'Sacramento';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sacramento'), 
+  local('Sacramento-Regular'),
+  url(public/Sacramento-Regular.ttf) format('truetype');
+}
+
 * {
     margin: 0;
     padding: 0;
