@@ -2,7 +2,7 @@
 	<article class="about">
     <section>
 		  <h1>Teaching Art is my joy</h1>
-		  <p><strong>Rabbitbrush Studio</strong> Studio came into existence in 2007, in Rose Canyon, UT,
+		  <p><strong>Rabbitbrush Studio</strong> came into existence in 2007, in Rose Canyon, UT,
         in a small studio surrounded by voluminous Rubber Rabbit Brush bushes
         that bloomed brilliant yellow every late summer and fall.
         I moved to my current location in 2014 and was able to build a larger

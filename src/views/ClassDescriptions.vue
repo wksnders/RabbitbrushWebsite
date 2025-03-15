@@ -6,22 +6,51 @@
       <p>In my classes, I focus on the skills necessary for students to become familiar with several different media, and learn enough control over them to be able to create their own works of art. I use a positive approach to direct and encourage my students.</p>
     </section>
     <section>
-      <h3>Children's After School Classes</h3>
-      <p>Classes rotate from drawing in black and white (graphite, charcoal, pen and ink) to adding color (colored pencil, soft pastels, oil pastels), to painting in watercolors and acrylic. We enhance these art and design skills through ceramic clay projects. All supplies included.</p>
-      <p><strong>Children's after school classes are $60/month per student. Classes are 1 1/2 hours long and are held 4 times a month. If there is a 5th week in a month, classes will not be held that week. All supplies included.</strong></p>
+      <h3>The After School Art Class</h3>
+      <p>For students age 9 through 18.  This is a mixed age class, held every Wednesday, 4:30—6:00 P.M.
+        Tuition is $65.00 per month, tuition is due by the first class of each month. All supplies and
+        clay firings are included in the monthly tuition. I keep my classes small and therefore there
+        is limited seating available. Since this is a mixed age class it is emphasized that we are all
+        on different levels of experience and we celebrate our individual unique vision for the art projects.
+        No comparing art projects or judgements about anyone’s art and especially no negative comments about
+        anyone’s project—especially their own. Students may stop attending at any time, however no refunds
+        will be given for unused Wednesdays in the month.</p>
+      <p>The After School Art Class has 3 to 5 classes per month depending on the number of Wednesdays in each month.
+        November and December sometime have only 3 classes due to the holidays, but some months may have 5 Wednesdays.
+        For Months with 5 Wednesdays, the 5th Wednesday will be used as a make-up class, that all students are welcome
+        to attend, to make up for classes missed due to illness or family vacations etc. At the Make--up classes students
+        may finish up work from previous classes, or I will also have a new project for students to do as well.
+        Students will not be able to make up specific projects from the classes they have missed in the past. These
+        are the only make-up classes I am able to accommodate.</p>
+        <p>In the After School Art Class students learn to use different mediums such as Graphite and pen & ink drawing,
+          Colored pencils, Watercolor pencils, Watercolors, Acrylic paints, soft pastels and oil pastels, charcoal, and
+          hand building Ceramic Clay Sculpture. A schedule of classes is available twice a year, December and August,
+          that lists the classes for the next season and specifically lets you know the subject we will be painting or
+          drawing and tells what medium will be used for each project.  Classes are subject to change without notice when
+          special circumstances arise.</p>
+          <p>Students have the full hour and a half to complete their project each week. I do not require the students to
+            clean up their space before they leave, I do all of the cleanup to give the students maximum time to finish
+            their art.  Sometimes we occasionally run a few minutes late, especially on Ceramic Clay sculpting day. Please
+            let me know if you need your student out exactly on time and I will see that they are ready to leave on time.</p>
     </section>
     <section>
-      <h3>Children's After School Classes</h3>
-      <p>Classes rotate from drawing in black and white (graphite, charcoal, pen and ink) to adding color (colored pencil, soft pastels, oil pastels), to painting in watercolors and acrylic. We enhance these art and design skills through ceramic clay projects. All supplies included.</p>
-    </section>
-    <section>
-      <h3>Adult Art Classes (Ages 12 and up)</h3>
-      <p> First and Third Wednesday of the month 7:30-9:30 PM
-          (No classes on the second, fourth, or fifth Wednesdays)
+      <h3>The Adult Art Class</h3>
+      <p>The Adult Art Class is an evening class for adult students. Class is held every Thursday night 7:00—9:30 P.M. Tuition
+        is $20.00 per class, due at the beginning of each class attended. Watercolor paper or Drawing Paper, 8 X 10 stretched
+        canvases, paints, pens, etc. and other necessary supplies are provided free of charge for the projects in this class.
+        <strong>You pay only for the classes you attend.</strong> You may quit at any time.
       </p>
-      <p>First Wednesday of each month, $20.00. 7:30pm to 9:30 pm, a full art class with a new project each month, all supplies included. We will use a variety of media including pencil, colored pencils, oil pastel, charcoal, watercolor and acrylic. Maybe hand built ceramic sculpture! Adult students must register for these classes.</p>
-      <p>Third Wednesday of each month, add-on Studio Night! 7:30-9:30 pm is an Open Studio night where regular adult students can come to the studio and finish anything they didn't get done on the previous class, or get a new paper/canvas and practice the same technique again, or do their own picture with studio supplies. I will be available for assistance or questions, but no new project will be taught. This is not a stand-alone class, but is only open to regular adult students. Adult students must preregister for the Studio Night. $32/month for both the First Wednesday class and the Third Wednesday Studio Night. </p>
-      <p>You do not need to take the Open Studio night on the third Wednesday if you just want to take the first Wednesday class.</p>
+      <p>Adult Class students learn various mediums such as pen & ink or graphite drawing skills, Watercolors and or Acrylic
+        painting, etc.  Students may bring their own projects to work on, or join in teacher led group projects that as a class
+        they decide they would like to learn.  Any student who does not want to do the project that the majority of the students
+        in class want to do, will be given alternative ideas for individual teacher supervised projects instead. </p>
+      <p>The adult class is designed to accommodate people with a busy schedule. You only pay for the classes you attend;
+        tuition is due at the beginning of each class. I send out a weekly reminder text message, to people who are signed
+        up for this service, and students reply to my text to let me know if they plan on attending or not. If an interested
+        person is not signed up with me to receive a reminder text message, they are responsible to call or text me before
+        5:00 P.M. to let me know if they plan to attend that night. <strong class="underline"> If no students have texted or called or replied to me by
+        5:00 P.M. on Thursday that they plan on attending, the class may be cancelled for that night, and I will not guarantee
+        that the studio will be open for that night. </strong>  </p>
     </section>
 
     <section class="images"></section>
@@ -31,6 +60,10 @@
 </template>
 
 <style>
+.underline{
+  text-decoration: underline;
+}
+
 @media (min-width: 1024px) {
 	.about {
 		min-height: 100vh;

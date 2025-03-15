@@ -18,6 +18,10 @@ a{
 	transition: 0.4s;
 }
 
+strong{
+	font-weight: 600;
+}
+
 @media (hover: hover) {
 	a:hover {
 		cursor: pointer;
