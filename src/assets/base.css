@@ -42,7 +42,19 @@
   font-weight: 400;
   src: local('Sacramento'), 
   local('Sacramento-Regular'),
-  url(public/Sacramento-Regular.ttf) format('truetype');
+  url(/Sacramento-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sanchez';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Sanchez Italic'), local('Sanchez-Italic'), url(/Sanchez-Regular.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Sanchez';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Sanchez'), local('Sanchez-Regular'), url(/Sanchez-Italic.ttf) format('truetype');
 }
 
 * {
