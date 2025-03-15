@@ -10,6 +10,10 @@
 
 <style scoped>
 
+.hero-section{
+  padding: 2rem 10% 1rem 10%;
+}
+
 h1{
   font-size:72px;
 	color: var(--color-heading);
@@ -18,7 +22,8 @@ h1{
 }
 
 h2{
-  padding-left: 10%;
+  width: 100%;
+  text-align: center;
   font-size:64px;
 	color: var(--color-heading);
   font-family: 'Sacramento';
