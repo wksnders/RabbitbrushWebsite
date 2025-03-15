@@ -22,6 +22,11 @@ strong{
 	font-weight: 600;
 }
 
+
+article{
+	padding: 1rem 10% 1rem 10%;
+}
+
 @media (hover: hover) {
 	a:hover {
 		cursor: pointer;
