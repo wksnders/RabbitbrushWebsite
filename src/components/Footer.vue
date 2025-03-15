@@ -30,10 +30,14 @@
 h1 {
   padding-top:1rem;
   display: inline-block;
-	color: white;
+	color: var(--color-box-heading);
+  font-family: 'Sacramento';
+  font-weight: 400;
 }
 h2 {
-	color: white;
+	color: var(--color-box-heading);
+  font-family: 'Sacramento';
+  font-weight: 400;
 }
 
 footer{
@@ -45,7 +49,8 @@ footer{
 
 .footer-container{
   position: relative;
-  margin: 0 10%;
+  margin: 0 10% 0 10%;
+  padding-bottom: 5px;
   width: 80%;
   background: black;
 }
@@ -55,12 +60,17 @@ footer{
   width: 100%;
 }
 
+.row:first-of-type{
+  display: flex;
+  justify-content: space-between;
+}
+
 nav {
   width: 60%;
   vertical-align:middle;
 	font-size: 12px;
 	text-align: center;
-	margin-top: 2rem;
+	margin-top: 1rem;
   color: white;
   display: inline-block;
 }
@@ -76,7 +86,7 @@ nav a.router-link-exact-active:hover {
 nav a {
 	display: inline-block;
 	padding: 0 1rem;
-	border-left: 1px solid var(--color-border);
+	border-left: 1px solid var(--color-box-heading);
 }
 
 nav a:first-of-type {
