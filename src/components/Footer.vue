@@ -49,9 +49,8 @@ footer{
 
 .footer-container{
   position: relative;
-  margin: 0 10% 0 10%;
   padding-bottom: 5px;
-  width: 80%;
+  width: 100%;
   background: black;
 }
 
@@ -60,17 +59,13 @@ footer{
   width: 100%;
 }
 
-.row:first-of-type{
-  display: flex;
-  justify-content: space-between;
-}
-
 nav {
-  width: 60%;
+  width: 100%;
   vertical-align:middle;
 	font-size: 12px;
 	text-align: center;
 	margin-top: 1rem;
+	margin-bottom: 1rem;
   color: white;
   display: inline-block;
 }
@@ -85,11 +80,36 @@ nav a.router-link-exact-active:hover {
 
 nav a {
 	display: inline-block;
-	padding: 0 1rem;
+	padding: 0 .6rem;
 	border-left: 1px solid var(--color-box-heading);
 }
 
 nav a:first-of-type {
 	border: 0;
+}
+
+@media (min-width: 600px) {
+  .row:first-of-type{
+    display: flex;
+    justify-content: space-between;
+  }
+  nav {
+    width: 60%;
+    margin-bottom: 0;
+  }
+
+}
+
+@media (min-width: 800px) {
+  .footer-container{
+    width: 80%;
+    margin: 0 10% 0 10%;
+	}
+}
+
+@media (min-width: 1000px) {
+  nav a {
+	  padding: 0 1rem;
+  }
 }
 </style>
