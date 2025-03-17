@@ -54,7 +54,7 @@ header {
 	max-height: 100vh;
 }
 	header .nav-wrapper {
-    margin: 0 10% 1rem 10%;
+    margin: 0 5% 1rem 5%;
     display: flex;
 		place-items: flex-start;
 		flex-wrap: wrap;
@@ -93,5 +93,21 @@ nav a {
 
 nav a:first-of-type {
 	border: 0;
+}
+
+
+@media (min-width: 600px) {
+
+}
+
+@media (min-width: 800px) {
+	header .nav-wrapper {
+    margin: 0 10% 1rem 10%;
+  }
+
+}
+
+@media (min-width: 1000px) {
+
 }
 </style>

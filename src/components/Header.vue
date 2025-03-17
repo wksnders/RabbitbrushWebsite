@@ -15,7 +15,7 @@
 }
 
 h1{
-  font-size:72px;
+  font-size:42px;
 	color: var(--color-heading);
   font-family: 'Sacramento';
   font-weight: 400;
@@ -24,14 +24,37 @@ h1{
 h2{
   width: 100%;
   text-align: center;
-  font-size:64px;
+  font-size:32px;
 	color: var(--color-heading);
   font-family: 'Sacramento';
   font-weight: 400;
 }
 
 .small{
-  font-size:36px;
+  font-size:22px;
 	color: var(--color-heading);
+}
+
+@media (min-width: 600px) {
+  h1{
+    font-size:64px;
+  }
+
+  h2{
+    font-size:50px;
+  }
+
+  .small{
+    font-size:36px;
+  }
+}
+
+@media (min-width: 800px) {
+  h1{
+    font-size:72px;
+  }
+  h2{
+    font-size:64px;
+  }
 }
 </style>
