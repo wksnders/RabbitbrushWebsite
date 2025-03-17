@@ -70,10 +70,9 @@ nav {
   vertical-align:middle;
 	width: 100%;
   height: 100%;
-	font-size: 20px;
+	font-size: 14px;
 	text-align: center;
-	margin-top: 2rem;
-  min-height: 65px;
+	margin-top: 1rem;
   z-index: 1;
 
 }
@@ -87,8 +86,8 @@ nav a.router-link-exact-active:hover {
 
 nav a {
 	display: inline-block;
-	padding: 0 1rem;
-	border-left: .1rem solid var(--color-box-heading);
+	padding: 0 .3rem;
+	border-left: 1px solid var(--color-box-heading);
 }
 
 nav a:first-of-type {
@@ -97,12 +96,27 @@ nav a:first-of-type {
 
 
 @media (min-width: 600px) {
+  nav {
+	  font-size: 16px;
+  }
+  nav a {
+  	padding: 0 .5rem;
+  	border-left: .1rem solid var(--color-box-heading);
+  }
 
 }
 
 @media (min-width: 800px) {
 	header .nav-wrapper {
     margin: 0 10% 1rem 10%;
+  }
+  nav {
+	  font-size: 20px;
+    min-height: 65px;
+    margin-top: 2rem;
+  }
+  nav a {
+  	padding: 0 1rem;
   }
 
 }
