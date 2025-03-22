@@ -3,6 +3,7 @@ import 'vue3-carousel/carousel.css'
 import { RouterLink } from 'vue-router';
 import { Carousel, Slide, Navigation } from 'vue3-carousel'
 import { ref } from 'vue'
+const base = import.meta.env.BASE_URL
 
 const currentSlide = ref(0)
 
@@ -29,7 +30,7 @@ const thumbnailsConfig = {
 
 const images = Array.from({ length: 5 }, (_, index) => ({
   id: index + 1,
-  url: `/home_carousel${index + 1}.jpg`,
+  url: `home_carousel${index + 1}.jpg`,
 }))
 
 </script>
@@ -56,7 +57,7 @@ const images = Array.from({ length: 5 }, (_, index) => ({
           },
         }">
     <Slide v-for="image in images" :key="image.id">
-      <img :src="image.url" alt="Gallery Image" class="gallery-image" />
+      <img :src="`${base}${image.url}`" alt="Gallery Image" class="gallery-image" />
     </Slide>
   </Carousel>
 
@@ -88,7 +89,7 @@ const images = Array.from({ length: 5 }, (_, index) => ({
           :class="['thumbnail', { 'is-active': isActive }]"
           @click="slideTo(currentIndex)"
         >
-          <img :src="image.url" alt="Thumbnail Image" class="thumbnail-image" />
+          <img :src="`${base}${image.url}`" alt="Thumbnail Image" class="thumbnail-image" />
         </div>
       </template>
     </Slide>
