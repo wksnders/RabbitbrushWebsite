@@ -11,8 +11,10 @@
 <style scoped>
 
 .hero-section{
-  padding: 2rem 10% 1rem 10%;
+  padding: 0 5% 1rem 5%;
 }
+
+
 
 h1{
   font-size:42px;
@@ -50,6 +52,9 @@ h2{
 }
 
 @media (min-width: 800px) {
+  .hero-section{
+    padding: 2rem 10% 1rem 10%;
+  }
   h1{
     font-size:72px;
   }

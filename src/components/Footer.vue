@@ -55,9 +55,10 @@ footer{
 }
 
 .row{
-  padding: 0 1rem;
+  padding: 0 5%;
   width: 100%;
 }
+
 
 nav {
   width: 100%;
@@ -105,6 +106,9 @@ nav a:first-of-type {
     width: 80%;
     margin: 0 10% 0 10%;
 	}
+  .row{
+    padding: 0 1rem;
+  }
 }
 
 @media (min-width: 1000px) {
