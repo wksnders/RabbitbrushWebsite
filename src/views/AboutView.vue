@@ -39,13 +39,13 @@ const images = Array.from({ length: 9 }, (_, index) => ({
 	<article class="about">
     <section>
 		  <h1>Teaching Art is my joy</h1>
-		  <p><strong>Rabbitbrush Studio</strong> came into existence in 2007, in Rose Canyon, UT,
+		  <p class="about-text"><strong>Rabbitbrush Studio</strong> came into existence in 2007, in Rose Canyon, UT,
         in a small studio surrounded by voluminous Rubber Rabbit Brush bushes
         that bloomed brilliant yellow every late summer and fall.
         I moved to my current location in 2014 and was able to build a larger
         studio and teach many more students.</p>
 
-      <p>I now have nearly 50 years of art teaching experience with ages 4 through adult.
+      <p class="about-text">I now have nearly 50 years of art teaching experience with ages 4 through adult.
         I attended college for a total of 4 years, studying General education,
         Art and Humanities and Early childhood education. I have an associate’s degree in
         early childhood education. I worked with pre-school and school aged students for around 17 years.
@@ -53,7 +53,7 @@ const images = Array.from({ length: 9 }, (_, index) => ({
         then served as President, Vice President, secretary and historian in that group and maintained
         membership for more than 20 years.</p>
 
-        <p>I love to create meaningful art. Sharing my skills and joy in art with others through teaching makes
+        <p class="about-text">I love to create meaningful art. Sharing my skills and joy in art with others through teaching makes
           life so rewarding. I have been married for over 50 years. We have 4 children and 6 grandchildren that
           I am very proud of, and along with them, my life mission is to also leave something beautiful in art
           behind in this world when I am gone, a visual art and art teaching legacy.
@@ -122,6 +122,10 @@ const images = Array.from({ length: 9 }, (_, index) => ({
 </template>
 
 <style>
+
+.about-text{
+  padding: .3rem 0;
+}
 
 
 @media (min-width: 1024px) {

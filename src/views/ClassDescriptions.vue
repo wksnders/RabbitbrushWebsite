@@ -2,12 +2,12 @@
 	<article class="descriptions">
 		<h1>Class Descriptions</h1>
     <section>
-      <p>Through art education children begin to notice and appreciate colors and subtle details in the world around them.  With encouragement and guidance they learn to express themselves visually, building self confidence and self esteem and developing the courage to be a creator and an explorer of their world.</p>
-      <p>In my classes, I focus on the skills necessary for students to become familiar with several different media, and learn enough control over them to be able to create their own works of art. I use a positive approach to direct and encourage my students.</p>
+      <p class="desc-text">Through art education children begin to notice and appreciate colors and subtle details in the world around them.  With encouragement and guidance they learn to express themselves visually, building self confidence and self esteem and developing the courage to be a creator and an explorer of their world.</p>
+      <p class="desc-text">In my classes, I focus on the skills necessary for students to become familiar with several different media, and learn enough control over them to be able to create their own works of art. I use a positive approach to direct and encourage my students.</p>
     </section>
     <section>
       <h3>The After School Art Class</h3>
-      <p>For students age 9 through 18.  This is a mixed age class, held every Wednesday, 4:30—6:00 P.M.
+      <p class="desc-text">For students age 9 through 18.  This is a mixed age class, held every Wednesday, 4:30—6:00 P.M.
         Tuition is $65.00 per month, tuition is due by the first class of each month. All supplies and
         clay firings are included in the monthly tuition. I keep my classes small and therefore there
         is limited seating available. Since this is a mixed age class it is emphasized that we are all
@@ -15,36 +15,36 @@
         No comparing art projects or judgements about anyone’s art and especially no negative comments about
         anyone’s project—especially their own. Students may stop attending at any time, however no refunds
         will be given for unused Wednesdays in the month.</p>
-      <p>The After School Art Class has 3 to 5 classes per month depending on the number of Wednesdays in each month.
+      <p class="desc-text">The After School Art Class has 3 to 5 classes per month depending on the number of Wednesdays in each month.
         November and December sometime have only 3 classes due to the holidays, but some months may have 5 Wednesdays.
         For Months with 5 Wednesdays, the 5th Wednesday will be used as a make-up class, that all students are welcome
         to attend, to make up for classes missed due to illness or family vacations etc. At the Make--up classes students
         may finish up work from previous classes, or I will also have a new project for students to do as well.
         Students will not be able to make up specific projects from the classes they have missed in the past. These
         are the only make-up classes I am able to accommodate.</p>
-        <p>In the After School Art Class students learn to use different mediums such as Graphite and pen & ink drawing,
+        <p class="desc-text">In the After School Art Class students learn to use different mediums such as Graphite and pen & ink drawing,
           Colored pencils, Watercolor pencils, Watercolors, Acrylic paints, soft pastels and oil pastels, charcoal, and
           hand building Ceramic Clay Sculpture. A schedule of classes is available twice a year, December and August,
           that lists the classes for the next season and specifically lets you know the subject we will be painting or
           drawing and tells what medium will be used for each project.  Classes are subject to change without notice when
           special circumstances arise.</p>
-          <p>Students have the full hour and a half to complete their project each week. I do not require the students to
+          <p class="desc-text">Students have the full hour and a half to complete their project each week. I do not require the students to
             clean up their space before they leave, I do all of the cleanup to give the students maximum time to finish
             their art.  Sometimes we occasionally run a few minutes late, especially on Ceramic Clay sculpting day. Please
             let me know if you need your student out exactly on time and I will see that they are ready to leave on time.</p>
     </section>
     <section>
       <h3>The Adult Art Class</h3>
-      <p>The Adult Art Class is an evening class for adult students. Class is held every Thursday night 7:00—9:30 P.M. Tuition
+      <p class="desc-text">The Adult Art Class is an evening class for adult students. Class is held every Thursday night 7:00—9:30 P.M. Tuition
         is $20.00 per class, due at the beginning of each class attended. Watercolor paper or Drawing Paper, 8 X 10 stretched
         canvases, paints, pens, etc. and other necessary supplies are provided free of charge for the projects in this class.
         <strong>You pay only for the classes you attend.</strong> You may quit at any time.
       </p>
-      <p>Adult Class students learn various mediums such as pen & ink or graphite drawing skills, Watercolors and or Acrylic
+      <p class="desc-text">Adult Class students learn various mediums such as pen & ink or graphite drawing skills, Watercolors and or Acrylic
         painting, etc.  Students may bring their own projects to work on, or join in teacher led group projects that as a class
         they decide they would like to learn.  Any student who does not want to do the project that the majority of the students
         in class want to do, will be given alternative ideas for individual teacher supervised projects instead. </p>
-      <p>The adult class is designed to accommodate people with a busy schedule. You only pay for the classes you attend;
+      <p class="desc-text">The adult class is designed to accommodate people with a busy schedule. You only pay for the classes you attend;
         tuition is due at the beginning of each class. I send out a weekly reminder text message, to people who are signed
         up for this service, and students reply to my text to let me know if they plan on attending or not. If an interested
         person is not signed up with me to receive a reminder text message, they are responsible to call or text me before
@@ -64,6 +64,9 @@
   text-decoration: underline;
 }
 
+.desc-text{
+  padding: .3rem 0;
+}
 @media (min-width: 1024px) {
 	.about {
 		min-height: 100vh;
