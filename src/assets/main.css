@@ -24,7 +24,16 @@ strong{
 
 
 article{
-	padding: 1rem 10% 1rem 10%;
+    padding: 0 5% 1rem 5%;
+}
+@media (min-width: 800px) {
+	article {
+		padding: 1rem 10% 1rem 10%;
+  }
+  p{
+	font-size: 16px;
+	line-height: 18px;
+  }
 }
 
 @media (hover: hover) {
