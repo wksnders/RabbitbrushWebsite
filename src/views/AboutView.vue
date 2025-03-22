@@ -69,10 +69,10 @@ const images = Array.from({ length: 9 }, (_, index) => ({
             height: 440,
           },
           1024: {
-            height: 500,
+            height: 380,
           },
           1200: {
-            height: 600,
+            height: 440,
           },
         }">
     <Slide v-for="image in images" :key="image.id">
@@ -93,11 +93,11 @@ const images = Array.from({ length: 9 }, (_, index) => ({
         itemsToShow: 3.8,
       },
       1024: {
-        height: 130,
+        height: 90,
         itemsToShow: 4.2,
       },
       1200: {
-        height: 140,
+        height: 120,
         itemsToShow: 4.5,
       },
     }"
@@ -132,7 +132,8 @@ const images = Array.from({ length: 9 }, (_, index) => ({
 	.about {
 		min-height: 100vh;
 		display: flex;
-		align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
 	}
 }
 
