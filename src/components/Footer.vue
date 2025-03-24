@@ -6,7 +6,7 @@
     <div class="footer-container">
       <div class="row">
         <h1><span class="editor_footer_script">Rabbitbrush Studio</span></h1>
-			  <nav>
+			  <nav class="footer-nav">
 			  	<RouterLink to="/">Home</RouterLink>
 			  	<RouterLink to="/about-me">About</RouterLink>
 			  	<RouterLink to="/class-descriptions">Class Descriptions</RouterLink>
@@ -60,7 +60,7 @@ footer{
 }
 
 
-nav {
+.footer-nav {
   width: 100%;
   vertical-align:middle;
 	font-size: 12px;
@@ -71,21 +71,21 @@ nav {
   display: inline-block;
 }
 
-nav a.router-link-exact-active {
+.footer-nav a.router-link-exact-active {
 	color: lightskyblue;
 }
 
-nav a.router-link-exact-active:hover {
+.footer-nav a.router-link-exact-active:hover {
 	background-color: transparent;
 }
 
-nav a {
+.footer-nav a {
 	display: inline-block;
 	padding: 0 .6rem;
 	border-left: 1px solid var(--color-box-heading);
 }
 
-nav a:first-of-type {
+.footer-nav a:first-of-type {
 	border: 0;
 }
 
@@ -94,7 +94,7 @@ nav a:first-of-type {
     display: flex;
     justify-content: space-between;
   }
-  nav {
+  .footer-nav {
     width: 60%;
     margin-bottom: 0;
   }
@@ -112,7 +112,8 @@ nav a:first-of-type {
 }
 
 @media (min-width: 1000px) {
-  nav a {
+  .footer-nav a {
+    font-size: 18px;
 	  padding: 0 1rem;
   }
 }

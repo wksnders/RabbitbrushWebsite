@@ -122,6 +122,15 @@ nav a:first-of-type {
 }
 
 @media (min-width: 1000px) {
-
+  nav {
+	  margin-top: 1.5rem;
+	  font-size: 26px;
+  }
+}
+@media (min-width: 1200px) {
+  nav {
+	  margin-top: 1rem;
+	  font-size: 30px;
+  }
 }
 </style>

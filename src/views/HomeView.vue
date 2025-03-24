@@ -109,7 +109,7 @@ const images = Array.from({ length: 5 }, (_, index) => ({
             <div class="contact-details">
               <div>
                 <h3 class="contact">Call +1801.694.1891</h3>
-                <a class="contact" href="facebook.com/RabbitbrushArtStudios">facebook.com/RabbitbrushArtStudios</a>
+                <a class="contact" href="https://www.facebook.com/RabbitbrushArtStudios" referrerpolicy="no-referrer" target="_blank" alt="Facebook page(Opens in new tab)">facebook.com/RabbitbrushArtStudios</a>
                 <p class="soft">1619 W. Allegheny Dr.</p>
                 <p class="soft">Taylorsville, UT</p>
               </div>
