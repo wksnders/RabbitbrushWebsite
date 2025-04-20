@@ -18,6 +18,20 @@ const galleryConfig = {
   pauseAutoplayOnHover: true,
   height: 320,
   autoplay: 4000,
+  breakpoints: {
+    600:{
+      height: 380,
+    },
+    800: {
+      height: 440,
+    },
+    1024: {
+      height: 500,
+    },
+    1200: {
+      height: 600,
+    },
+  },
 }
 
 const thumbnailsConfig = {
@@ -26,6 +40,24 @@ const thumbnailsConfig = {
   wrapAround: true,
   touchDrag: false,
   gap: 10,
+  breakpoints:{
+    600:{
+      height: 90,
+      itemsToShow: 3.5,
+    },
+    800: {
+      height: 120,
+      itemsToShow: 3.8,
+    },
+    1024: {
+      height: 130,
+      itemsToShow: 4.2,
+    },
+    1200: {
+      height: 140,
+      itemsToShow: 4.5,
+    },
+  }
 }
 
 const images = Array.from({ length: 5 }, (_, index) => ({
@@ -41,48 +73,13 @@ const images = Array.from({ length: 5 }, (_, index) => ({
       <h1>Welcome to Rabbitbrush Studio!</h1>
       <h5>Taught by Annette L. Emmer</h5>
       <section>
-        <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide"
-        :breakpoints="{
-          600:{
-            height: 380,
-          },
-          800: {
-            height: 440,
-          },
-          1024: {
-            height: 500,
-          },
-          1200: {
-            height: 600,
-          },
-        }">
+        <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide">
     <Slide v-for="image in images" :key="image.id">
       <img :src="`${base}${image.url}`" alt="Gallery Image" class="gallery-image" />
     </Slide>
   </Carousel>
 
-  <Carousel id="thumbnails" v-bind="thumbnailsConfig" v-model="currentSlide"
-
-
-  :breakpoints="{
-      600:{
-        height: 90,
-        itemsToShow: 3.5,
-      },
-      800: {
-        height: 120,
-        itemsToShow: 3.8,
-      },
-      1024: {
-        height: 130,
-        itemsToShow: 4.2,
-      },
-      1200: {
-        height: 140,
-        itemsToShow: 4.5,
-      },
-    }"
-  >
+  <Carousel id="thumbnails" v-bind="thumbnailsConfig" v-model="currentSlide">
     <Slide v-for="image in images" :key="image.id">
       <template #default="{ currentIndex, isActive }">
         <div
