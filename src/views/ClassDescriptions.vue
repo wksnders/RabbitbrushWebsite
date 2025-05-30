@@ -1,3 +1,9 @@
+<script setup>
+import { ref } from 'vue'
+
+const showDetails = ref(false)
+</script>
+
 <template>
 	<article class="descriptions">
 		<h1>Class Descriptions</h1>
@@ -6,9 +12,28 @@
       <p class="desc-text">In my classes, I focus on the skills necessary for students to become familiar with several different media, and learn enough control over them to be able to create their own works of art. I use a positive approach to direct and encourage my students.</p>
     </section>
     <section>
-      <h3>The After School Art Class</h3>
-      <p class="desc-text">For students age 9 through 18.  This is a mixed age class, held every Wednesday, 4:30—6:00 P.M.
-        Tuition is $65.00 per month, tuition is due by the first class of each month. All supplies and
+      <h3 class="desc-header">The After School Art Class</h3>
+      <ul class="info-list">
+        <li>
+          <img src="@/components/icons/bi--people-fill.svg" alt="Group Icon" />
+          <h5>For students age 9–18</h5>
+        </li>
+        <li>
+          <img src="@/components/icons/bi--calendar-event-fill.svg" alt="Calendar Icon" />
+          <h5>Every Wednesday</h5>
+        </li>
+        <li>
+          <img src="@/components/icons/bi--clock-fill.svg" alt="Clock Icon" />
+          <h5>4:30 – 6:00 P.M.</h5>
+        </li>
+        <li>
+          <img src="@/components/icons/bi--currency-dollar.svg" alt="Dollar Icon" />
+          <h5>
+            $65/month
+          </h5>
+        </li>
+      </ul>
+      <p class="desc-text">Tuition is due by the first class of each month. All supplies and
         clay firings are included in the monthly tuition. I keep my classes small and therefore there
         is limited seating available. Since this is a mixed age class it is emphasized that we are all
         on different levels of experience and we celebrate our individual unique vision for the art projects.
@@ -34,9 +59,28 @@
             let me know if you need your student out exactly on time and I will see that they are ready to leave on time.</p>
     </section>
     <section>
-      <h3>The Adult Art Class</h3>
-      <p class="desc-text">The Adult Art Class is an evening class for adult students. Class is held every Thursday night 7:00—9:30 P.M. Tuition
-        is $20.00 per class, due at the beginning of each class attended. Watercolor paper or Drawing Paper, 8 X 10 stretched
+      <h3 class="desc-header">The Adult Art Class</h3>
+      <ul class="info-list">
+        <li>
+          <img src="@/components/icons/bi--people-fill.svg" alt="Group Icon" />
+          <h5>Adult students</h5>
+        </li>
+        <li>
+          <img src="@/components/icons/bi--calendar-event-fill.svg" alt="Calendar Icon" />
+          <h5>Every Thursday</h5>
+        </li>
+        <li>
+          <img src="@/components/icons/bi--clock-fill.svg" alt="Clock Icon" />
+          <h5>7:00—9:30 P.M.</h5>
+        </li>
+        <li>
+          <img src="@/components/icons/bi--currency-dollar.svg" alt="Dollar Icon" />
+          <h5>
+            $20.00 per class
+          </h5>
+        </li>
+      </ul>
+      <p class="desc-text">Tuition is due at the beginning of each class attended. Watercolor paper or Drawing Paper, 8 X 10 stretched
         canvases, paints, pens, etc. and other necessary supplies are provided free of charge for the projects in this class.
         <strong>You pay only for the classes you attend.</strong> You may quit at any time.
       </p>
@@ -64,6 +108,21 @@
   text-decoration: underline;
 }
 
+.desc-header{
+  padding: 1rem 0 0 0;
+}
+
+.desc-img-container{
+  padding: 0;
+  width: 100%;
+  height: auto;
+}
+
+.desc-img{
+  width: 100%;
+  height: auto;
+}
+
 .desc-text{
   padding: .3rem 0;
 }
@@ -73,5 +132,35 @@
 		display: flex;
 		align-items: center;
 	}
+}
+
+.info-list {
+  list-style: none;
+  padding: 0;
+}
+.info-list li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.info-list img {
+  width: 24px;
+  height: 24px;
+}
+.tuition-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 0.25rem;
+}
+.tuition-details {
+
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.3s;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
 }
 </style>
