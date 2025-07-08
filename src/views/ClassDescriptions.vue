@@ -109,7 +109,7 @@ const showDetails = ref(false)
 }
 
 .desc-header{
-  padding: 1rem 0 0 0;
+  padding: 1rem 0 0.5rem 0;
 }
 
 .desc-img-container{
