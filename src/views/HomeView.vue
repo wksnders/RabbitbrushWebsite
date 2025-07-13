@@ -1,7 +1,7 @@
 <script setup>
 import 'vue3-carousel/carousel.css'
 import { RouterLink } from 'vue-router';
-import { Carousel, Slide, Navigation } from 'vue3-carousel'
+import { Carousel, Slide, Pagination, Navigation } from 'vue3-carousel'
 import { ref } from 'vue'
 const base = import.meta.env.BASE_URL
 
@@ -34,32 +34,6 @@ const galleryConfig = {
   },
 }
 
-const thumbnailsConfig = {
-  height: 80,
-  itemsToShow: 2.5,
-  wrapAround: true,
-  touchDrag: false,
-  gap: 10,
-  breakpoints:{
-    600:{
-      height: 90,
-      itemsToShow: 3.5,
-    },
-    800: {
-      height: 120,
-      itemsToShow: 3.8,
-    },
-    1024: {
-      height: 130,
-      itemsToShow: 4.2,
-    },
-    1200: {
-      height: 140,
-      itemsToShow: 4.5,
-    },
-  }
-}
-
 const images = Array.from({ length: 5 }, (_, index) => ({
   id: index + 1,
   url: `home_carousel${index + 1}.jpg`,
@@ -74,62 +48,49 @@ const images = Array.from({ length: 5 }, (_, index) => ({
       <h5>Taught by Annette L. Emmer</h5>
       <section>
         <Carousel id="gallery" v-bind="galleryConfig" v-model="currentSlide">
-    <Slide v-for="image in images" :key="image.id">
-      <img :src="`${base}${image.url}`" alt="Gallery Image" class="gallery-image" />
-    </Slide>
-  </Carousel>
-
-  <Carousel id="thumbnails" v-bind="thumbnailsConfig" v-model="currentSlide">
-    <Slide v-for="image in images" :key="image.id">
-      <template #default="{ currentIndex, isActive }">
-        <div
-          :class="['thumbnail', { 'is-active': isActive }]"
-          @click="slideTo(currentIndex)"
-        >
-          <img :src="`${base}${image.url}`" alt="Thumbnail Image" class="thumbnail-image" />
-        </div>
-      </template>
-    </Slide>
-
-    <template #addons>
-      <Navigation />
-    </template>
-  </Carousel>
+          <Slide v-for="image in images" :key="image.id">
+            <img :src="`${base}${image.url}`" alt="Gallery Image" class="gallery-image" />
+          </Slide>
+          <template #addons>
+            <Navigation />
+            <Pagination />
+          </template>
+        </Carousel>
       </section>
       <section>
-        <div class="contact-me">
-          <img class="background-top" src="/top_black_box.png">
-          <div class="background-mid"></div>
-          <img class="background-bottom" src="/bottom_black_box.png"/>
-          <div class="contact-me-content">
-            <h2 class="contact">CONTACT ME</h2>
-            <div class="contact-details">
-              <div>
-                <h3 class="contact">Call +1801.694.1891</h3>
+          <div class="contact-me">
+            <img class="background-top" src="/top_black_box.png">
+            <div class="background-mid"></div>
+            <img class="background-bottom" src="/bottom_black_box.png"/>
+            <div class="contact-me-content">
+              <h2 class="contact">CONTACT ME</h2>
+              <div class="contact-details">
+                <div>
+                  <h3 class="contact">Call +1801.694.1891</h3>
                 <a class="contact" href="https://www.facebook.com/RabbitbrushArtStudios" referrerpolicy="no-referrer" target="_blank" alt="Facebook page(Opens in new tab)">facebook.com/RabbitbrushArtStudios</a>
-                <p class="soft">1619 W. Allegheny Dr.</p>
-                <p class="soft">Taylorsville, UT</p>
+                  <p class="soft">1619 W. Allegheny Dr.</p>
+                  <p class="soft">Taylorsville, UT</p>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-        <p class="main-text">
-            Do you have a child who loves art and needs more creative challenges than what is offered in regular school?
-            Do you have a child that needs more art, creativity and artistic expression to bring balance to their education?
-            Bring more fun and creative expression into your child’s education with weekly recurring art classes led by an
-            experienced art teacher.  Each class includes opportunities for individual creativity. <strong>Check out the
-              <RouterLink to="/class-descriptions" class="link">Class Description</RouterLink> for the After School Art Class! </strong>
-        </p>
-        <p class="main-text">
+          <p class="main-text">
+              Do you have a child who loves art and needs more creative challenges than what is offered in regular school?
+              Do you have a child that needs more art, creativity and artistic expression to bring balance to their education?
+              Bring more fun and creative expression into your child’s education with weekly recurring art classes led by an
+              experienced art teacher.  Each class includes opportunities for individual creativity. <strong>Check out the
+                <RouterLink to="/class-descriptions" class="link">Class Description</RouterLink> for the After School Art Class! </strong>
+          </p>
+          <p class="main-text">
           Are you looking for a creative outlet for yourself? Something just for you? Maybe you are a complete beginner,
-          searching for a new adventure or a way to unwind and add creative expression to your regular weekly routine?
-          Perhaps you used to paint or sketch, years ago, and long for a way back into an activity you loved; or you are
-          looking for a refresher course with instruction on familiar art mediums, or instruction on new art techniques
-          and new mediums you are interested in. Instead of going out and buying a bunch of new art supplies that may just
-          sit in a drawer unused, consider taking an affordable evening art class.  Often, without someone to get you started,
-          those art supplies become a new source of stress due to the money you spent but are not using.  Art classes for you
-          are more affordable than you might think. <strong>Check out the <RouterLink to="/class-descriptions" class="link">Class Description</RouterLink> of the Adult Art Class! </strong>
-        </p>
+            searching for a new adventure or a way to unwind and add creative expression to your regular weekly routine?
+            Perhaps you used to paint or sketch, years ago, and long for a way back into an activity you loved; or you are
+            looking for a refresher course with instruction on familiar art mediums, or instruction on new art techniques
+            and new mediums you are interested in. Instead of going out and buying a bunch of new art supplies that may just
+            sit in a drawer unused, consider taking an affordable evening art class.  Often, without someone to get you started,
+            those art supplies become a new source of stress due to the money you spent but are not using.  Art classes for you
+            are more affordable than you might think. <strong>Check out the <RouterLink to="/class-descriptions" class="link">Class Description</RouterLink> of the Adult Art Class! </strong>
+          </p>
       </section>
     </article>
 	</main>
