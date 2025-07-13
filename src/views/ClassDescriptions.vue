@@ -1,16 +1,31 @@
 <script setup>
 import { ref } from 'vue'
+import ClassDescriptionCard from '@/components/ClassDescriptionCard.vue';
 
 const showDetails = ref(false)
+
 </script>
 
 <template>
 	<article class="descriptions">
-		<h1>Class Descriptions</h1>
+		<h1>Availible Classes</h1>
+    <section class="cards">
+      <ClassDescriptionCard :classObj="{
+        name: 'After School Art Class',
+        price: 65,
+        imagePath: 'adult_class/IMG_6993.JPG',
+        day: 'Wed',
+        time: '4:30pm-6:00pm',
+        ages: '9-18'
+      }" />
+
+    </section>
     <section>
       <p class="desc-text">Through art education children begin to notice and appreciate colors and subtle details in the world around them.  With encouragement and guidance they learn to express themselves visually, building self confidence and self esteem and developing the courage to be a creator and an explorer of their world.</p>
       <p class="desc-text">In my classes, I focus on the skills necessary for students to become familiar with several different media, and learn enough control over them to be able to create their own works of art. I use a positive approach to direct and encourage my students.</p>
     </section>
+
+
     <section>
       <h3 class="desc-header">The After School Art Class</h3>
       <ul class="info-list">
@@ -106,6 +121,14 @@ const showDetails = ref(false)
 <style>
 .underline{
   text-decoration: underline;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 40px 20px;
 }
 
 .desc-header{
