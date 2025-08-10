@@ -8,8 +8,14 @@ const showDetails = ref(false);
 
 const components = ref([ClassDescriptionAdultArt,ClassDescriptionAfterSchool]);
 
-function toggle(){
-  components.value.reverse();
+function moveToFront(obj) {
+  const index = components.value.indexOf(obj);
+
+  if (index !== -1) {
+    components.value.splice(index, 1);
+  }
+
+  components.value.unshift(obj);
 }
 </script>
 
@@ -20,10 +26,22 @@ function toggle(){
       <ClassDescriptionCard :classObj="{
         name: 'After School Art Class',
         price: 65,
+        priceFrequency: 'per month',
         imagePath: 'adult_class/IMG_6993.JPG',
         day: 'Wed',
         time: '4:30pm-6:00pm',
-        ages: '9-18'
+        ages: '9-18',
+        details: ()=>{moveToFront(ClassDescriptionAfterSchool)},
+      }" />
+      <ClassDescriptionCard :classObj="{
+        name: 'The Adult Art Class',
+        price: 20,
+        priceFrequency: 'per class',
+        imagePath: 'adult_class/IMG_6993.JPG',
+        day: 'Thu',
+        time: '7:00—9:30pm',
+        ages: '18+',
+        details: ()=>{moveToFront(ClassDescriptionAdultArt)},
       }" />
 
     </section>

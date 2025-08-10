@@ -19,7 +19,7 @@ const imageUrl = computed(() => `${base}${props.classObj.imagePath}`)
  <div class="card-header">
     <h3>{{ classObj.name }}</h3>
     <p>
-      <strong class="light">${{ classObj.price }}</strong> per month
+      <strong class="light">${{ classObj.price }}</strong> {{classObj.priceFrequency}}
     </p>
  </div>
  <div class="card-image-container">
@@ -31,7 +31,7 @@ const imageUrl = computed(() => `${base}${props.classObj.imagePath}`)
       <p>Ages {{ classObj.ages }}</p>
    </div>
    <div class="card-footer-buttons">
-      <button>Details</button>
+      <button @click="classObj.details()">Details</button>
       <button>Gallery</button>
     </div>
   </div>
