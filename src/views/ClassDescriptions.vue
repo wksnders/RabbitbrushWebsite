@@ -50,8 +50,6 @@ function moveToFront(obj) {
       <p class="desc-text">In my classes, I focus on the skills necessary for students to become familiar with several different media, and learn enough control over them to be able to create their own works of art. I use a positive approach to direct and encourage my students.</p>
     </section>
 
-    <button @click="toggle">Toggle Button</button>
-
     <component :is="components[0]"/>
     <component :is="components[1]"/>
 
