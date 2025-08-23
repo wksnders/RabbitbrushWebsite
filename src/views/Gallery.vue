@@ -14,7 +14,7 @@ const columns = [
   },
   {
     title: "My Art Gallery",
-    text: "A third column with paragraph text and a call-to-action button. Perfect for summaries or promos.",
+    text: "A third column with paragraph text and a call-to-action button. Perfect for gallery descriptions.",
     link: "#my-gallery",
     button: "Go to Section 3"
   }
