@@ -7,7 +7,7 @@ const { all: galleries } = useGalleries();
 // Map galleries into columns
 const columns = galleries.value.map(g => ({
   title: g.title,
-  text: g.subtitle,
+  text: g.summary,
   link: `/gallery/${g.link}`,
   button: `View ${g.title}`
 }));
