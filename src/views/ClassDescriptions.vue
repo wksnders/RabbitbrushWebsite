@@ -1,5 +1,6 @@
 <script setup>
 import { ref } from 'vue'
+import router from '@/router';
 import ClassDescriptionCard from '@/components/ClassDescriptionCard.vue';
 import ClassDescriptionAdultArt from '@/components/ClassDescriptionAdultArt.vue';
 import ClassDescriptionAfterSchool from '@/components/ClassDescriptionAfterSchool.vue';
@@ -31,7 +32,10 @@ function moveToFront(obj) {
         day: 'Wed',
         time: '4:30pm-6:00pm',
         ages: '9-18',
-        details: ()=>{moveToFront(ClassDescriptionAfterSchool)},
+        details: ()=>{
+          moveToFront(ClassDescriptionAfterSchool);
+          router.push({ name: 'Class Descriptions', hash:'#after-school-art-class'});
+        },
       }" />
       <ClassDescriptionCard :classObj="{
         name: 'The Adult Art Class',
@@ -41,7 +45,10 @@ function moveToFront(obj) {
         day: 'Thu',
         time: '7:00—9:30pm',
         ages: '18+',
-        details: ()=>{moveToFront(ClassDescriptionAdultArt)},
+        details: ()=>{
+          moveToFront(ClassDescriptionAdultArt)
+          router.push({ name: 'Class Descriptions', hash:'#adult-art-class'});
+        },
       }" />
 
     </section>

@@ -4,8 +4,7 @@
 </script>
 
 <template>
-
-    <section>
+    <section id="adult-art-class">
       <h3 class="desc-header">The Adult Art Class</h3>
       <ul class="info-list">
         <li>

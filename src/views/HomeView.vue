@@ -79,7 +79,7 @@ const images = Array.from({ length: 5 }, (_, index) => ({
               Do you have a child that needs more art, creativity and artistic expression to bring balance to their education?
               Bring more fun and creative expression into your child’s education with weekly recurring art classes led by an
               experienced art teacher.  Each class includes opportunities for individual creativity. <strong>Check out the
-                <RouterLink to="/class-descriptions" class="link">Class Description</RouterLink> for the After School Art Class! </strong>
+                <RouterLink to="/class-descriptions/#after-school-art-class" class="link">Class Description</RouterLink> for the After School Art Class! </strong>
           </p>
           <p class="main-text">
           Are you looking for a creative outlet for yourself? Something just for you? Maybe you are a complete beginner,
@@ -89,7 +89,7 @@ const images = Array.from({ length: 5 }, (_, index) => ({
             and new mediums you are interested in. Instead of going out and buying a bunch of new art supplies that may just
             sit in a drawer unused, consider taking an affordable evening art class.  Often, without someone to get you started,
             those art supplies become a new source of stress due to the money you spent but are not using.  Art classes for you
-            are more affordable than you might think. <strong>Check out the <RouterLink to="/class-descriptions" class="link">Class Description</RouterLink> of the Adult Art Class! </strong>
+            are more affordable than you might think. <strong>Check out the <RouterLink to="/class-descriptions/#adult-art-class" class="link">Class Description</RouterLink> of the Adult Art Class! </strong>
           </p>
       </section>
     </article>

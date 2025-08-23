@@ -5,7 +5,7 @@
 </script>
 <template>
 
-<section>
+<section id="after-school-art-class">
       <h3 class="desc-header">The After School Art Class</h3>
       <ul class="info-list">
         <li>
