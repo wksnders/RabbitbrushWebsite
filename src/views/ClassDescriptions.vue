@@ -7,7 +7,7 @@ import ClassDescriptionAfterSchool from '@/components/ClassDescriptionAfterSchoo
 
 const showDetails = ref(false);
 
-const components = ref([ClassDescriptionAdultArt,ClassDescriptionAfterSchool]);
+const components = ref([ClassDescriptionAfterSchool,ClassDescriptionAdultArt,]);
 
 function moveToFront(obj) {
   const index = components.value.indexOf(obj);
