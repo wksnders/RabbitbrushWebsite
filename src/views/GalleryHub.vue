@@ -1,24 +1,16 @@
 <script setup>
-const columns = [
-  {
-    title: "After School Gallery",
-    text: "This is some example paragraph text for the first column. It adjusts nicely to fit the layout.",
-    link: "#after-school-gallery",
-    button: "Go to Section 1"
-  },
-  {
-    title: "Adult Gallery",
-    text: "Here’s another column with its own paragraph and button. Great for highlighting features or info.",
-    link: "#adult-gallery",
-    button: "Go to Section 2"
-  },
-  {
-    title: "My Art Gallery",
-    text: "A third column with paragraph text and a call-to-action button. Perfect for gallery descriptions.",
-    link: "#my-gallery",
-    button: "Go to Section 3"
-  }
-]
+import { useGalleries } from '@/composables/useGalleries';
+import { RouterLink } from 'vue-router';
+
+const { all: galleries } = useGalleries();
+
+// Map galleries into columns
+const columns = galleries.value.map(g => ({
+  title: g.title,
+  text: g.subtitle,
+  link: `/gallery/${g.link}`,
+  button: `View ${g.title}`
+}));
 </script>
 
 <template>

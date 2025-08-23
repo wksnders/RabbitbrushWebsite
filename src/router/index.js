@@ -27,7 +27,18 @@ const router = createRouter({
 		{
 			path: '/gallery',
 			name: 'Gallery',
-			component: () => import('../views/Gallery.vue'),
+			component: () => import('../views/GalleryHub.vue'),
+    },
+    {
+      path: '/gallery/:galleryName',
+      name: 'GalleryPage',
+      component: () => import('../views/GalleryPage.vue'),
+      props: true, // route param passed as prop if needed
+      meta: { title: 'Gallery' }
+    },
+    {
+      path: '/gallery/:catchAll(.*)',
+      redirect: '/gallery'
     }
 	],
   scrollBehavior(to, from, savedPosition) {
