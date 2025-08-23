@@ -11,6 +11,7 @@
 			  	<RouterLink to="/about-me">About</RouterLink>
 			  	<RouterLink to="/class-descriptions">Class Descriptions</RouterLink>
 			  	<RouterLink to="/testimonials">Testimonials</RouterLink>
+				  <RouterLink to="/gallery">Galleries</RouterLink>
 			  </nav>
       </div>
       <div div class="row">
