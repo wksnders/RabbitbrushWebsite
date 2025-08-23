@@ -23,6 +23,11 @@ const router = createRouter({
 			path: '/testimonials',
 			name: 'Testimonials',
 			component: () => import('../views/Testimonials.vue'),
+    },
+		{
+			path: '/gallery',
+			name: 'Gallery',
+			component: () => import('../views/Gallery.vue'),
     }
 	],
   scrollBehavior(to, from, savedPosition) {
