@@ -1,5 +1,6 @@
 <script setup>
 import Testimonial from '@/components/Testimonial.vue'
+const base = import.meta.env.BASE_URL
 
 const testimonials = [
   { name: 'Trista E.', quote: `These classes are incredible! My kids are having so much fun, and our house is filled with the beautiful art that they're creating. They're so proud to show off their artwork to everyone who comes to visit.` },
@@ -18,13 +19,16 @@ const testimonials = [
   <article class="about">
     <section>
       <h1>Why Take my classes?</h1>
-      <Testimonial
-        v-for="(t, i) in testimonials"
-        :key="i"
-        :quoteObj="t"
-      />
+      <div v-for="(t, i) in testimonials" :key="i">
+        <!-- Testimonial -->
+        <Testimonial :quoteObj="t" />
+
+        <!-- Image after every 3rd testimonial -->
+        <div v-if="(i + 1) % 3 === 0" class="testimonial-image">
+          <img :src="`${base}full_class.jpg`" alt="Placeholder Image" />
+        </div>
+      </div>
     </section>
-    <section class="images"></section>
   </article>
 </template>
 
