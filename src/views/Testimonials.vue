@@ -33,6 +33,8 @@ const testimonials = [
 </template>
 
 <style>
+img{max-width: 100%;}
+
 @media (min-width: 1024px) {
 	.about {
 		min-height: 100vh;
