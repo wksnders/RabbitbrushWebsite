@@ -31,8 +31,10 @@ const imageUrl = computed(() => `${base}${props.classObj.imagePath}`)
       <p>Ages {{ classObj.ages }}</p>
    </div>
    <div class="card-footer-buttons">
-      <button @click="classObj.details()">Details</button>
-      <button>Gallery</button>
+      <button @click="classObj.details()" class="footer-button">Details</button>
+      <RouterLink :to="classObj.galleryLink" class="footer-button">
+        Gallery
+      </RouterLink>
     </div>
   </div>
 </div>
@@ -113,7 +115,11 @@ const imageUrl = computed(() => `${base}${props.classObj.imagePath}`)
   gap: 10px;
 }
 
-.card-footer-buttons button {
+.card-footer-buttons .footer-button {
+  border: 2px solid var(--color-border);
+  background-color: var(--color-background-soft);
+  color: var(--color-text);
+  text-align: center;
   flex: 1;
   padding: 8px 12px;
   font-size: 0.95rem;
@@ -122,11 +128,11 @@ const imageUrl = computed(() => `${base}${props.classObj.imagePath}`)
   transition: background-color 0.2s ease, border-color 0.2s ease;
 }
 
-.card-footer-buttons > button:first-child {
+.card-footer-buttons > .footer-button:first-child {
   color: var(--color-text);
   background-color: var(--color-background-accent);
 }
-.card-footer-buttons button:hover {
+.card-footer-buttons .footer-button:hover {
   color: var(--color-text-accent);
   background-color: var(--color-text-accent-background);
 }

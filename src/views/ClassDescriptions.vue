@@ -4,6 +4,13 @@ import router from '@/router';
 import ClassDescriptionCard from '@/components/ClassDescriptionCard.vue';
 import ClassDescriptionAdultArt from '@/components/ClassDescriptionAdultArt.vue';
 import ClassDescriptionAfterSchool from '@/components/ClassDescriptionAfterSchool.vue';
+import { useGalleries } from "@/composables/useGalleries";
+
+const { getGallery } = useGalleries();
+function getGalleryLink(galleryName)
+{
+  return getGallery(galleryName)?.link ? `/gallery/${getGallery(galleryName).link}` : "/gallery/"
+};
 
 const showDetails = ref(false);
 
@@ -36,6 +43,7 @@ function moveToFront(obj) {
           moveToFront(ClassDescriptionAfterSchool);
           router.push({ name: 'Class Descriptions', hash:'#after-school-art-class'});
         },
+        galleryLink:getGalleryLink('after_school_gallery'),
       }" />
       <ClassDescriptionCard :classObj="{
         name: 'The Adult Art Class',
@@ -49,6 +57,7 @@ function moveToFront(obj) {
           moveToFront(ClassDescriptionAdultArt)
           router.push({ name: 'Class Descriptions', hash:'#adult-art-class'});
         },
+        galleryLink:getGalleryLink('adult_gallery'),
       }" />
 
     </section>

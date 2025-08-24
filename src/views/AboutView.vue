@@ -67,6 +67,5 @@ h1{
   aspect-ratio: 4/3;
   height: auto;
   border-radius: 8px;
-  margin-bottom: 3rem;
 }
 </style>
