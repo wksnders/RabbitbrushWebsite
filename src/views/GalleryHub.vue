@@ -14,7 +14,7 @@ const columns = galleries.value.map(g => ({
 </script>
 
 <template>
-  <div class="container">
+  <article class="container">
     <div
       v-for="(col, index) in columns"
       :key="index"
@@ -26,15 +26,18 @@ const columns = galleries.value.map(g => ({
         {{ col.button }}
       </RouterLink>
     </div>
-  </div>
+  </article>
 </template>
 
 <style scoped>
+article{
+  padding: 1rem 10% 1rem 10%;
+}
+
 .container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 1.5rem;
-  padding: 2rem;
 }
 
 .column {

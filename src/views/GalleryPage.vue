@@ -62,7 +62,7 @@ const galleryData = computed(() => {
 </script>
 
 <template>
-  <div class="gallery-page">
+  <article class="gallery-page">
     <h1>{{ galleryInfo.title }}</h1>
     <p v-if="galleryInfo.subtitle">{{ galleryInfo.subtitle }}</p>
     <p v-if="galleryInfo.description">{{ galleryInfo.description }}</p>
@@ -80,15 +80,18 @@ const galleryData = computed(() => {
     </div>
     <p v-else-if="loaded">No galleries found in "{{ galleryInfo.folder }}"</p>
     <p v-else>Loading galleries...</p>
-  </div>
+  </article>
 </template>
 
 <style scoped>
+article{
+  padding: 1rem 10% 1rem 10%;
+}
+
 .gallery-page {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding: 2rem;
 }
 
 h1 {
