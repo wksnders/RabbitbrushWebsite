@@ -42,6 +42,7 @@ h2 {
 }
 
 footer{
+  clear: both;
   margin-top: 3rem;
   position:relative;
   bottom: 0;
@@ -73,7 +74,7 @@ footer{
 }
 
 .footer-nav a.router-link-exact-active {
-	color: lightskyblue;
+	color: var(--color-background-accent);
 }
 
 .footer-nav a.router-link-exact-active:hover {

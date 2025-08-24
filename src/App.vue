@@ -78,7 +78,7 @@ nav {
 
 }
 nav a.router-link-exact-active {
-	color: lightskyblue;
+	color: var(--color-background-accent);
 }
 
 nav a.router-link-exact-active:hover {

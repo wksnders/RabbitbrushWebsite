@@ -39,7 +39,7 @@ const imageUrl = computed(() => `${base}${props.classObj.imagePath}`)
 
 </template>
 
-<style>
+<style scoped>
 
 .card {
   background-color: var(--color-background);
@@ -74,7 +74,7 @@ const imageUrl = computed(() => `${base}${props.classObj.imagePath}`)
 }
 
 .card-header .light {
-  color: var(--color-text-accent);
+  color: var(--vt-c-text-light-2);
 }
 
 .card-image-container {
@@ -123,12 +123,12 @@ const imageUrl = computed(() => `${base}${props.classObj.imagePath}`)
 }
 
 .card-footer-buttons > button:first-child {
-  color: var(--color-text-accent-background);
+  color: var(--color-text);
   background-color: var(--color-background-accent);
 }
 .card-footer-buttons button:hover {
-  color: var(--color-text-accent-background);
-  background-color: var(--color-text-accent);
+  color: var(--color-text-accent);
+  background-color: var(--color-text-accent-background);
 }
 
 </style>
