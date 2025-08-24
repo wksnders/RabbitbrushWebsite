@@ -9,7 +9,7 @@
 			  <nav class="footer-nav">
 			  	<RouterLink to="/">Home</RouterLink>
 			  	<RouterLink to="/about-me">About</RouterLink>
-			  	<RouterLink to="/class-descriptions">Class Descriptions</RouterLink>
+			  	<RouterLink to="/class-descriptions">Classes</RouterLink>
 			  	<RouterLink to="/testimonials">Testimonials</RouterLink>
 				  <RouterLink to="/gallery">Galleries</RouterLink>
 			  </nav>
@@ -90,13 +90,13 @@ footer{
 	border: 0;
 }
 
-@media (min-width: 600px) {
+@media (min-width: 650px) {
   .row:first-of-type{
     display: flex;
     justify-content: space-between;
   }
   .footer-nav {
-    width: 60%;
+    width: 350px;
     margin-bottom: 0;
   }
 
@@ -113,6 +113,9 @@ footer{
 }
 
 @media (min-width: 1000px) {
+  .footer-nav{
+    width: 70%;
+  }
   .footer-nav a {
     font-size: 18px;
 	  padding: 0 1rem;
