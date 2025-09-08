@@ -70,10 +70,6 @@ const slideTo = (nextSlide) => (currentSlide.value = nextSlide)
             :alt="image.title || 'Gallery Image'"
             class="gallery-image"
           />
-          <div class="image-caption" v-if="image.title || image.description">
-            <h3 v-if="image.title" class="image-title">{{ image.title }}</h3>
-            <p v-if="image.description" class="image-description">{{ image.description }}</p>
-          </div>
         </div>
       </Slide>
     </Carousel>
@@ -109,6 +105,18 @@ const slideTo = (nextSlide) => (currentSlide.value = nextSlide)
         <Navigation />
       </template>
     </Carousel>
+
+      <div
+        v-if="images[currentSlide]?.title || images[currentSlide]?.description"
+        class="image-caption"
+      >
+        <h3 v-if="images[currentSlide]?.title" class="image-title">
+          {{ images[currentSlide].title }}
+        </h3>
+        <p v-if="images[currentSlide]?.description" class="image-description">
+          {{ images[currentSlide].description }}
+        </p>
+      </div>
   </div>
 </template>
 
@@ -123,27 +131,28 @@ const slideTo = (nextSlide) => (currentSlide.value = nextSlide)
   text-align: center;
   margin-bottom: 1rem;
 }
-.carousel-title { font-size: 1.8rem; margin-bottom: 0.3rem; }
-.carousel-subtitle { font-size: 1rem; color: #666; }
-.carousel-description { font-size: 0.95rem; color: #555; margin-top: 0.5rem; }
+.carousel-title {  margin-bottom: 0.3rem; }
+.carousel-description { margin-top: 0.5rem; }
 
 .gallery-slide {
+  height: 100%;
+  aspect-ratio: 16 / 9; /* or 5/3 like your working version */
   display: flex;
-  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
+
 .gallery-image {
   border-radius: 16px;
-  width: 100%;
-  height: auto;
-  object-fit: contain;
+  object-fit: contain; /* fills the box without distortion */
 }
+
 .image-caption {
-  margin-top: 0.5rem;
+  margin-top: 0.75rem;
   text-align: center;
 }
-.image-title { font-size: 1.2rem; font-weight: bold; }
-.image-description { font-size: 0.95rem; color: #555; }
+.image-title { font-weight: bold; }
+.image-description { color: var(--color-text); }
 
 #thumbnails { margin-top: 10px; }
 .thumbnail {
