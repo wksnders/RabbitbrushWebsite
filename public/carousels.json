@@ -87,6 +87,19 @@
     }
   },
   "my_art_gallery": {
+    "8_principles": {
+      "meta": {
+        "title": "The 8 Principles of Unitarian Universalism",
+        "subtitle": "A visual interpretation",
+        "description": "A series of acrylic paintings depicting each of the 8 Principles",
+        "order": 2
+      },
+      "images": [
+        {
+          "filename": "Blew Steele.png"
+        }
+      ]
+    },
     "my_art_study": {
       "meta": {
         "title": "Abstract Series 01",
