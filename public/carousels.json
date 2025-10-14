@@ -54,7 +54,10 @@
           "order": 1
         },
         {
-          "filename": "IMG_0802.jpg"
+          "filename": "IMG_0802.jpg",
+          "title": "Second Artwork",
+          "description": "This is a second trial",
+          "order": 2
         },
         {
           "filename": "IMG_0803.jpg"
