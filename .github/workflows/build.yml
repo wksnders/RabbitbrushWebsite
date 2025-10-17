@@ -62,9 +62,6 @@ jobs:
       - name: Install dependencies
         run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
         working-directory: ${{ env.BUILD_PATH }}
-      - name: Generate carousels.json
-        run: ${{ steps.detect-package-manager.outputs.runner }} generate:carousel
-        working-directory: ${{ env.BUILD_PATH }}
       - name: Build with Vite
         run: |
           ${{ steps.detect-package-manager.outputs.runner }} build
