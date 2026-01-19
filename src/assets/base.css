@@ -49,12 +49,12 @@
 }
 
 @font-face {
-  font-family: 'Sacramento';
+  font-family: 'Kalam';
   font-style: normal;
   font-weight: 400;
-  src: local('Sacramento'), 
-  local('Sacramento-Regular'),
-  url(/Sacramento-Regular.ttf) format('truetype');
+  src: local('Kalam'), 
+  local('Kalam-Regular'),
+  url(/Kalam-Regular.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Sanchez';

@@ -32,12 +32,12 @@ h1 {
   padding-top:1rem;
   display: inline-block;
 	color: var(--color-box-heading);
-  font-family: 'Sacramento';
+  font-family: 'Kalam';
   font-weight: 400;
 }
 h2 {
 	color: var(--color-box-heading);
-  font-family: 'Sacramento';
+  font-family: 'Kalam';
   font-weight: 400;
 }
 

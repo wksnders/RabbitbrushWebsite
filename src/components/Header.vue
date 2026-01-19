@@ -19,7 +19,7 @@
 h1{
   font-size:42px;
 	color: var(--color-heading);
-  font-family: 'Sacramento';
+  font-family: 'Kalam';
   font-weight: 400;
 }
 
@@ -28,7 +28,7 @@ h2{
   text-align: center;
   font-size:32px;
 	color: var(--color-heading);
-  font-family: 'Sacramento';
+  font-family: 'Kalam';
   font-weight: 400;
 }
 
