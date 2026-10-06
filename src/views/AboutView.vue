@@ -26,7 +26,7 @@ const base = import.meta.env.BASE_URL
         then served as President, Vice President, secretary, and historian in that group and maintained
         membership for more than 20 years.</p>
       <img
-        :src="`${base}full_class.jpg`"
+        :src="`${base}IMG_5457.JPG`"
         alt="Placeholder right"
         class="float-right-img"
       />
