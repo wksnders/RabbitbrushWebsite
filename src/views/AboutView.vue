@@ -8,7 +8,7 @@ const base = import.meta.env.BASE_URL
     <section>
 		  <h1>Teaching Art is my joy</h1>
       <img
-        :src="`${base}1616727134182blob.jpg`"
+        :src="`${base}public/students_in_studio/1616727134182blob.jpg`"
         alt="Placeholder left"
         class="float-left-img"
       />
