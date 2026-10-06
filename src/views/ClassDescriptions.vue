@@ -49,7 +49,7 @@ function moveToFront(obj) {
         name: 'The Adult Art Class',
         price: 20,
         priceFrequency: 'per class',
-        imagePath: 'full_class.jpg',
+        imagePath: 'studio_3.jpg',
         day: 'Thu',
         time: '7:00—9:30pm',
         ages: '18+',
