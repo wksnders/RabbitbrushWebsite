@@ -28,29 +28,29 @@
         </li>
       </ul>
       <p class="desc-text">Tuition is due by the first class of each month. All supplies and
-        clay firings are included in the monthly tuition. I keep my classes small and therefore there
-        is limited seating available. Since this is a mixed age class it is emphasized that we are all
-        on different levels of experience and we celebrate our individual unique vision for the art projects.
-        No comparing art projects or judgements about anyone’s art and especially no negative comments about
-        anyone’s project—especially their own. Students may stop attending at any time, however no refunds
+        clay firings are included in the monthly tuition. I keep my classes small, and therefore there
+        is limited seating available. Since this is a mixed-age class, it is emphasized that we are all
+        on different levels of experience, and we celebrate our individual, unique vision for the art projects.
+        There is no comparison of art projects, nor judgment about anyone’s art. We also make no negative comments about
+        anyone’s project—especially their own. Students may stop attending at any time, however there are no refunds
         will be given for unused Wednesdays in the month.</p>
-      <p class="desc-text">The After School Art Class has 3 to 5 classes per month depending on the number of Wednesdays in each month.
-        November and December sometime have only 3 classes due to the holidays, but some months may have 5 Wednesdays.
-        For Months with 5 Wednesdays, the 5th Wednesday will be used as a make-up class, that all students are welcome
-        to attend, to make up for classes missed due to illness or family vacations etc. At the Make--up classes students
+      <p class="desc-text">The After School Art Class has 3 to 5 classes per month, depending on the number of Wednesdays in each month.
+        November and December sometimes have only 3 classes due to the holidays, but some months may have 5 Wednesdays.
+        For Months with 5 Wednesdays, the 5th Wednesday will be used as a make-up class, to which all students are welcome
+        to attend, to make up for classes missed due to illness or family vacations, etc. At the Make-up classes, students
         may finish up work from previous classes, or I will also have a new project for students to do as well.
         Students will not be able to make up specific projects from the classes they have missed in the past. These
         are the only make-up classes I am able to accommodate.</p>
         <p class="desc-text">In the After School Art Class students learn to use different mediums such as Graphite and pen & ink drawing,
           Colored pencils, Watercolor pencils, Watercolors, Acrylic paints, soft pastels and oil pastels, charcoal, and
-          hand building Ceramic Clay Sculpture. A schedule of classes is available twice a year, December and August,
+          hand-building Ceramic Clay Sculpture. A schedule of classes is available twice a year, in December and August,
           that lists the classes for the next season and specifically lets you know the subject we will be painting or
-          drawing and tells what medium will be used for each project.  Classes are subject to change without notice when
+          drawing, and tells what medium will be used for each project.  Classes are subject to change without notice when
           special circumstances arise.</p>
           <p class="desc-text">Students have the full hour and a half to complete their project each week. I do not require the students to
-            clean up their space before they leave, I do all of the cleanup to give the students maximum time to finish
-            their art.  Sometimes we occasionally run a few minutes late, especially on Ceramic Clay sculpting day. Please
-            let me know if you need your student out exactly on time and I will see that they are ready to leave on time.</p>
+            clean up their space before they leave; I do all of the cleanup to give the students maximum time to finish
+            their art.  Sometimes we occasionally run a few minutes late, especially on Ceramic Clay sculpting days. Please
+            let me know if you need your student out exactly on time, and I will see that they are ready to leave on time.</p>
     </section>
   </template>
 
