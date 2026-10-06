@@ -25,7 +25,7 @@ const testimonials = [
 
         <!-- Image after every 3rd testimonial -->
         <div v-if="(i + 1) % 3 === 0" class="testimonial-image">
-          <img :src="`${base}full_class.jpg`" alt="Placeholder Image" />
+          <img :src="`${base}1616727226228blob.jpg`" alt="Placeholder Image" />
         </div>
       </div>
     </section>
