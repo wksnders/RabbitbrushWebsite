@@ -8,7 +8,7 @@ const base = import.meta.env.BASE_URL
     <section>
 		  <h1>Teaching Art is my joy</h1>
       <img
-        :src="`${base}full_class.jpg`"
+        :src="`${base}1616727134182blob.jpg`"
         alt="Placeholder left"
         class="float-left-img"
       />
@@ -19,11 +19,11 @@ const base = import.meta.env.BASE_URL
         studio and teach many more students.</p>
 
       <p class="about-text">I now have nearly 50 years of art teaching experience with ages 4 through adult.
-        I attended college for a total of 4 years, studying General education,
-        Art and Humanities and Early childhood education. I have an associate’s degree in
-        early childhood education. I worked with pre-school and school aged students for around 17 years.
-        I was juried in to The Associated Utah Artists Professional Artists’ group when I was 30,
-        then served as President, Vice President, secretary and historian in that group and maintained
+        I attended college for a total of 4 years, studying General Education,
+        Art and Humanities and Early Childhood Education. I have an associate’s degree in
+        early childhood education. I worked with pre-school and school-aged students for around 17 years.
+        I was juried into The Associated Utah Artists Professional Artists’ group when I was 30,
+        then served as President, Vice President, secretary, and historian in that group and maintained
         membership for more than 20 years.</p>
       <img
         :src="`${base}full_class.jpg`"
@@ -34,7 +34,7 @@ const base = import.meta.env.BASE_URL
           life so rewarding. I have been married for over 50 years. We have 4 children and 6 grandchildren that
           I am very proud of, and along with them, my life mission is to also leave something beautiful in art
           behind in this world when I am gone, a visual art and art teaching legacy.
-          I believe that I am creating a connection with relatives and friends that have not even been born yet.</p>
+          I believe I am forming connections with relatives and friends who have not even been born yet.</p>
     </section>
 
   </article>
