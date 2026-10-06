@@ -20,7 +20,7 @@ const base = import.meta.env.BASE_URL
 
       <p class="about-text">I now have nearly 50 years of art teaching experience with ages 4 through adult.
         I attended college for a total of 4 years, studying General Education,
-        Art and Humanities and Early Childhood Education. I have an associate’s degree in
+        Art and Humanities, and Early Childhood Education. I have an associate’s degree in
         early childhood education. I worked with pre-school and school-aged students for around 17 years.
         I was juried into The Associated Utah Artists Professional Artists’ group when I was 30,
         then served as President, Vice President, secretary, and historian in that group and maintained
