@@ -61,6 +61,15 @@ function moveToFront(obj) {
       }" />
 
     </section>
+    <section class="signup">
+      <h2>How to Sign Up</h2>
+      <p>To join a class, give me a call or send a message on Facebook.</p>
+      <p>
+        <a href="tel:+18016941891">Call 801.694.1891</a>
+        &nbsp;·&nbsp;
+        <a href="https://m.me/RabbitbrushArtStudios" target="_blank" referrerpolicy="no-referrer">Message on Facebook</a>
+      </p>
+    </section>
     <section>
       <p class="desc-text">Through art education children begin to notice and appreciate colors and subtle details in the world around them.  With encouragement and guidance they learn to express themselves visually, building self confidence and self esteem and developing the courage to be a creator and an explorer of their world.</p>
       <p class="desc-text">In my classes, I focus on the skills necessary for students to become familiar with several different media, and learn enough control over them to be able to create their own works of art. I use a positive approach to direct and encourage my students.</p>
@@ -87,6 +96,17 @@ function moveToFront(obj) {
   gap: 20px;
   justify-content: center;
   padding: 40px 20px;
+}
+
+.signup {
+  text-align: center;
+  padding-bottom: 1.5rem;
+}
+
+.signup a {
+  color: inherit;
+  font-weight: bold;
+  text-decoration: underline;
 }
 
 .desc-header{
