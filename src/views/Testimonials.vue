@@ -13,6 +13,19 @@ const testimonials = [
   { name: 'Former Child Student', quote: `Annette knows what she's doing, taking this art class was one of the best decisions I’ve made. I learned so many different techniques and styles of art. It really gave me a head start for future classes.` },
   { name: 'Former Child Student', quote: `I am so impressed by her classes, there's a wide range of work that we do, and Annette always helps you out so you're not left there not knowing what to do. Best class ever!` }
 ]
+
+// Images shown after every 3rd testimonial, in order (paths relative to public/).
+// If there are more slots than images, the list wraps around.
+const images = [
+  'students_in_studio/1616727226228blob.jpg',
+  'students_in_studio/1616727182648blob.jpg',
+  'students_in_studio/1616727258493blob.jpg',
+]
+
+function imageFor(i) {
+  const slot = (i + 1) / 3 - 1
+  return `${base}${images[slot % images.length]}`
+}
 </script>
 
 <template>
@@ -24,8 +37,8 @@ const testimonials = [
         <Testimonial :quoteObj="t" />
 
         <!-- Image after every 3rd testimonial -->
-        <div v-if="(i + 1) % 3 === 0" class="testimonial-image">
-          <img :src="`${base}1616727226228blob.jpg`" alt="Placeholder Image" />
+        <div v-if="(i + 1) % 3 === 0 && images.length" class="testimonial-image">
+          <img :src="imageFor(i)" alt="Students in the studio" />
         </div>
       </div>
     </section>
