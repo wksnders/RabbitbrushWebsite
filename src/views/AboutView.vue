@@ -8,7 +8,7 @@ const base = import.meta.env.BASE_URL
     <section>
 		  <h1>Teaching Art is my joy</h1>
       <img
-        :src="`${base}public/students_in_studio/1616727134182blob.jpg`"
+        :src="`${base}students_in_studio/1616727134182blob.jpg`"
         alt="Placeholder left"
         class="float-left-img"
       />
@@ -26,7 +26,7 @@ const base = import.meta.env.BASE_URL
         then served as President, Vice President, secretary, and historian in that group and maintained
         membership for more than 20 years.</p>
       <img
-        :src="`${base}public/studio_scenes/IMG_5457.JPG`"
+        :src="`${base}studio_scenes/IMG_5457.JPG`"
         alt="Placeholder right"
         class="float-right-img"
       />
