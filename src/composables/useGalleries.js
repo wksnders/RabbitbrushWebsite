@@ -9,8 +9,7 @@ const galleries = ref([
   {
     folder: 'after_school_gallery',
     title: 'After School Gallery',
-    summary: "This is some example paragraph text for the first column. It adjusts nicely to fit the layout.",
-    description: 'A showcase of after school class artwork',
+    description: 'A showcase of art from the after-school class',
     link: 'after-school-gallery', // optional, for hub navigation
   },
   {
