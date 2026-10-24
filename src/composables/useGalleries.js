@@ -15,7 +15,7 @@ const galleries = ref([
   {
     folder: 'adult_gallery',
     title: 'Adult Gallery',
-    description: 'A showcase of adult class art projects',
+    description: 'The class works in many media, including acrylics, watercolor, and ink',
     link: 'adult-class-gallery',
   },
   {
