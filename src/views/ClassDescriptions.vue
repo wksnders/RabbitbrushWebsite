@@ -29,7 +29,7 @@ function moveToFront(obj) {
 
 <template>
 	<article class="descriptions">
-		<h1>Availible Classes</h1>
+		<h1>Available Classes</h1>
     <section class="cards">
       <ClassDescriptionCard :classObj="{
         name: 'After School Art Class',
