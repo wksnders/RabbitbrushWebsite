@@ -29,7 +29,7 @@ function moveToFront(obj) {
 
 <template>
 	<article class="descriptions">
-		<h1>Availible Classes</h1>
+		<h1>Available Classes</h1>
     <section class="cards">
       <ClassDescriptionCard :classObj="{
         name: 'After School Art Class',
@@ -71,7 +71,7 @@ function moveToFront(obj) {
       </p>
     </section>
     <section>
-      <p class="desc-text">Through art education children begin to notice and appreciate colors and subtle details in the world around them.  With encouragement and guidance they learn to express themselves visually, building self confidence and self esteem and developing the courage to be a creator and an explorer of their world.</p>
+      <p class="desc-text">Through art education, children begin to notice and appreciate colors and subtle details in the world around them.  With encouragement and guidance they learn to express themselves visually, building self confidence and self esteem and developing the courage to be a creator and an explorer of their world.</p>
       <p class="desc-text">In my classes, I focus on the skills necessary for students to become familiar with several different media, and learn enough control over them to be able to create their own works of art. I use a positive approach to direct and encourage my students.</p>
     </section>
 

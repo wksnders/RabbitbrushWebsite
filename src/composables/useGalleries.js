@@ -8,22 +8,19 @@ import { ref, computed } from 'vue';
 const galleries = ref([
   {
     folder: 'after_school_gallery',
-    title: 'After School Gallery',
-    summary: "This is some example paragraph text for the first column. It adjusts nicely to fit the layout.",
-    description: 'A showcase of after school class artwork',
+    title: 'After-School Class Gallery',
+    description: 'A showcase of art from the after-school class',
     link: 'after-school-gallery', // optional, for hub navigation
   },
   {
     folder: 'adult_gallery',
     title: 'Adult Gallery',
-    summary: "Here’s another column with its own paragraph and button. Great for highlighting features or info.",
-    description: 'A showcase of adult class art projects',
+    description: 'The class works in many media, including acrylics, watercolor, and ink',
     link: 'adult-class-gallery',
   },
   {
     folder: 'my_art_gallery',
     title: 'My Art Gallery',
-    summary: "A third column with paragraph text and a call-to-action button. Perfect for gallery descriptions.",
     description: 'A showcase of my personal artwork',
     link: 'my-gallery',
   },
