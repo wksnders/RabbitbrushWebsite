@@ -56,6 +56,7 @@ h1{
   width: 50%;
   aspect-ratio: 4/3;
   height: auto;
+  object-fit: cover;
   border-radius: 8px;
 }
 
@@ -66,6 +67,7 @@ h1{
   width: 50%;
   aspect-ratio: 4/3;
   height: auto;
+  object-fit: cover;
   border-radius: 8px;
 }
 </style>

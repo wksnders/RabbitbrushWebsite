@@ -67,7 +67,7 @@ const galleryData = computed(() => {
     <p v-if="galleryInfo.subtitle">{{ galleryInfo.subtitle }}</p>
     <p v-if="galleryInfo.description">{{ galleryInfo.description }}</p>
 
-    <div v-if="loaded && galleryData.length">
+    <div v-if="loaded && galleryData.length" class="carousel-list">
       <GalleryCarousel
         v-for="carousel in galleryData"
         :key="carousel.name"
@@ -92,6 +92,12 @@ article{
   display: flex;
   flex-direction: column;
   gap: 2rem;
+}
+
+.carousel-list {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
 
 h1 {
